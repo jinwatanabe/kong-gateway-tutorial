@@ -1,0 +1,15 @@
+_format_version: "1.1"
+
+services:
+  - name: user-api
+    url: http://user-api:8002
+    routes:
+      - name: user-api-routes
+        paths:
+          - /user-api
+  - name: client-api
+    url: http://client-api:8003
+    routes:
+      - name: client-api-routes
+        paths:
+          - /client-api
